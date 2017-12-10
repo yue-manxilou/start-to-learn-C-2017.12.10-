@@ -1,0 +1,24 @@
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void exchange(int *a,int *b)
+{
+int tempt;
+tempt=*a;
+*a=*b;
+*b=tempt;
+}
+
+int main()
+{
+int a=3,b=2;
+printf("交换前：\n");
+printf("a=%d\t,b=%d\t\n",a,b);
+exchenge(&a,&b);
+printf("交换后：\n");
+printf("a=%d\t,b=%d\t\n",a,b);
+
+return 0;
+
+}
